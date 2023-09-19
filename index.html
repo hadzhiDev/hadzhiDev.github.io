@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Carpet Cleaning</title>
+</head>
+
+<body>
+    <header>
+        <div class="container1">
+            <div id="frame" onclick="navToggle()"></div>
+            <nav class="flex justify-between items-center sm:py-7 max-lg:py-4">
+                <div class="nav_logo">
+                    <img class="w-full max-lg:w-9/12" src="./assets/svg/navLogo.svg" alt="">
+                </div>
+                <div id="navBar" class="navBar flex lg:gap-10">
+                    <a class="nav_btns" href="#services">Услуги</a>
+                    <a class="nav_btns" href="#workers">Примеры работ</a>
+                    <a class="nav_btns" href="#order">Отзывы</a>
+                    <a class="nav_btns" href="#">Заказать</a>
+                    <div class="nav_contact lg:hidden">
+                        <div class="nav_contact_inner pb-2">
+                            <span class="font-medium text-lg">+996 (700) 600 600</span><br>
+                            <span class="font-12px">Ежидневно с 8:00 до 21:00</span>
+                        </div>
+                        <div class="nav_contact_inner flex items-center gap-12">
+                            <a href="#"><img src="./assets/svg/nav-tele.svg" alt=""></a>
+                            <a href="#"><img src="./assets/svg/nav_what.svg" alt=""></a>
+                            <a href="#"><img src="./assets/svg/nav_insta.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_contact flex gap-2.5 items-center max-lg:hidden">
+                    <a href="#"><img src="./assets/svg/nav_telegram.svg" alt=""></a>
+                    <a href="#"><img src="./assets/svg/nav_whatsApp.svg" alt=""></a>
+                    <div class="nav_contact_inner">
+                        <span class="font-medium">+996 (700) 600 600</span> <br>
+                        <span class="font-12px">Ежидневно с 8:00 до 21:00</span>
+                    </div>
+                </div>
+                <div class="navBars lg:hidden">
+                    <a onclick="navToggle()" id="navBars" href="javascript:void(0)"><img src="./assets/svg/navBars.svg"
+                            alt=""></a>
+                    <a onclick="navToggle()" id="navX" class="hidden" href="javascript:void(0)"><img
+                            src="./assets/svg/nav_x.svg" alt=""></a>
+                </div>
+            </nav>
+
+            <div class="main_header py-20 max-lg:pt-32 max-sm:pt-28">
+                <p>
+                    Оплата по факту сделанной работы
+                </p>
+                <div class="title text-4xl font-semibold max-w-sm py-2 max-sm:text-2xl">
+                    Мойка ковров,
+                    химчистка мебели,
+                    химчистка одежда
+                </div>
+                <div class="text mt-3">
+                    <input type="radio"> <span>Применяем безопасную химию европейского производство</span>
+                </div>
+                <div class="text pt-1.5 pb-7">
+                    <input type="radio"> <span>Выезжаем на дом или на офис в удобное время, в любой день</span>
+                </div>
+                <div class="btn ml-14 max-sm:ml-0">
+                    <a class="header_btn" href="#">Заказать химчистку</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container1">
+        <div id="services" class="cards_title text-center mt-14">
+            <div class="title font-semibold text-2xl">
+                Что чистим
+            </div>
+            <p class="pt-2 text-gray-700 ">
+                наши технологи по чистке виртуозно удаляют самые сложные <br>
+                и стойкие пятна, а так же неприятные запахи
+            </p>
+        </div>
+        <div class="cards pt-12 grid grid-cols-3 gap-10 max-lg:grid-cols-2 max-sm:grid-cols-1">
+            <div class="card">
+                <div class="card_inner text-center pb-20">
+                    <div class="card_image">
+                        <img class="w-full" src="./assets/images/card_1.png" alt="">
+                    </div>
+                    <div class="text font-medium pt-5">
+                        Мойка ковров
+                    </div>
+                    <p class="pb-7 text-gray-500">
+                        от 2000 сом
+                    </p>
+                    <div>
+                        <a class="card_btn" href="javascript:void(0)">Подробнее</a>
+                    </div>
+                </div>
+                <div class="more text-center hidden">
+                    <div class="flex justify-end p-4 xClose">
+                        <img src="./assets/svg/close-square.svg" alt="">
+                    </div>
+                    <div class="text">
+                        Стулья <span>(от 2000 сом)</span>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Срок работы:</div>
+                        <div>3-4 дня</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Вывоз доставка:</div>
+                        <div>Бесплатно</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Минимальный заказ:</div>
+                        <div>1000 сом</div>
+                    </div>
+                    <div class="pt-20 pb-7">
+                        <a class="text-sky-400" href="">Скидка на самовывоз 10%</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inner text-center pb-20">
+                    <div class="card_image">
+                        <img class="w-full" src="./assets/images/card_2.png" alt="">
+                    </div>
+                    <div class="text font-medium pt-5">
+                        Химчистка мебели
+                    </div>
+                    <p class="pb-7 text-gray-500">
+                        от 2000 сом
+                    </p>
+                    <div>
+                        <a class="card_btn" href="javascript:void(0)">Подробнее</a>
+                    </div>
+                </div>
+                <div class="more text-center hidden">
+                    <div class="flex justify-end p-4 xClose">
+                        <img src="./assets/svg/close-square.svg" alt="">
+                    </div>
+                    <div class="text">
+                        Стулья <span>(от 2000 сом)</span>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Срок работы:</div>
+                        <div>3-4 дня</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Вывоз доставка:</div>
+                        <div>Бесплатно</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Минимальный заказ:</div>
+                        <div>1000 сом</div>
+                    </div>
+                    <div class="pt-20 pb-7">
+                        <a class="text-sky-400" href="">Скидка на самовывоз 10%</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inner text-center pb-20">
+                    <div class="card_image">
+                        <img class="w-full" src="./assets/images/card_6.png" alt="">
+                    </div>
+                    <div class="text font-medium pt-5">
+                        Химчистка одежды
+                    </div>
+                    <p class="pb-7 text-gray-500">
+                        от 2000 сом
+                    </p>
+                    <div>
+                        <a class="card_btn" href="javascript:void(0)">Подробнее</a>
+                    </div>
+                </div>
+                <div class="more text-center hidden">
+                    <div class="flex justify-end p-4 xClose">
+                        <img src="./assets/svg/close-square.svg" alt="">
+                    </div>
+                    <div class="text">
+                        Стулья <span>(от 2000 сом)</span>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Срок работы:</div>
+                        <div>3-4 дня</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Вывоз доставка:</div>
+                        <div>Бесплатно</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Минимальный заказ:</div>
+                        <div>1000 сом</div>
+                    </div>
+                    <div class="pt-20 pb-7">
+                        <a class="text-sky-400" href="">Скидка на самовывоз 10%</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card_inner text-center pb-20">
+                    <div class="card_image">
+                        <img class="w-full" src="./assets/images/card_3.png" alt="">
+                    </div>
+                    <div class="text font-medium pt-5">
+                        Стирка одиялов
+                    </div>
+                    <p class="pb-7 text-gray-500">
+                        от 2000 сом
+                    </p>
+                    <div>
+                        <a class="card_btn" href="javascript:void(0)">Подробнее</a>
+                    </div>
+                </div>
+                <div class="more text-center hidden">
+                    <div class="flex justify-end p-4 xClose">
+                        <img src="./assets/svg/close-square.svg" alt="">
+                    </div>
+                    <div class="text">
+                        Стулья <span>(от 2000 сом)</span>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Срок работы:</div>
+                        <div>3-4 дня</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Вывоз доставка:</div>
+                        <div>Бесплатно</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Минимальный заказ:</div>
+                        <div>1000 сом</div>
+                    </div>
+                    <div class="pt-20 pb-7">
+                        <a class="text-sky-400" href="">Скидка на самовывоз 10%</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inner text-center pb-20">
+                    <div class="card_image">
+                        <img class="w-full" src="./assets/images/card_4.png" alt="">
+                    </div>
+                    <div class="text font-medium pt-5">
+                        Стирка штор
+                    </div>
+                    <p class="pb-7 text-gray-500">
+                        от 2000 сом
+                    </p>
+                    <div>
+                        <a class="card_btn" href="javascript:void(0)">Подробнее</a>
+                    </div>
+                </div>
+                <div class="more text-center hidden">
+                    <div class="flex justify-end p-4 xClose">
+                        <img src="./assets/svg/close-square.svg" alt="">
+                    </div>
+                    <div class="text">
+                        Стулья <span>(от 2000 сом)</span>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Срок работы:</div>
+                        <div>3-4 дня</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Вывоз доставка:</div>
+                        <div>Бесплатно</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Минимальный заказ:</div>
+                        <div>1000 сом</div>
+                    </div>
+                    <div class="pt-20 pb-7">
+                        <a class="text-sky-400" href="">Скидка на самовывоз 10%</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inner text-center pb-20">
+                    <div class="card_image">
+                        <img class="w-full" src="./assets/images/card_5.png" alt="">
+                    </div>
+                    <div class="text font-medium pt-5">
+                        Чистка тошоков
+                    </div>
+                    <p class="pb-7 text-gray-500">
+                        от 2000 сом
+                    </p>
+                    <div>
+                        <a class="card_btn" href="javascript:void(0)">Подробнее</a>
+                    </div>
+                </div>
+                <div class="more text-center hidden">
+                    <div class="flex justify-end p-4 xClose">
+                        <img src="./assets/svg/close-square.svg" alt="">
+                    </div>
+                    <div class="text">
+                        Стулья <span>(от 2000 сом)</span>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Срок работы:</div>
+                        <div>3-4 дня</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Вывоз доставка:</div>
+                        <div>Бесплатно</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Минимальный заказ:</div>
+                        <div>1000 сом</div>
+                    </div>
+                    <div class="pt-20 pb-7">
+                        <a class="text-sky-400" href="">Скидка на самовывоз 10%</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inner text-center  pb-20">
+                    <div class="card_image">
+                        <img class="w-full" src="./assets/images/card_6.png" alt="">
+                    </div>
+                    <div class="text font-medium pt-5">
+                        Химчистка одежды
+                    </div>
+                    <p class="pb-7 text-gray-500">
+                        от 2000 сом
+                    </p>
+                    <div>
+                        <a class="card_btn" href="javascript:void(0)">Подробнее</a>
+                    </div>
+                </div>
+                <div class="more text-center hidden">
+                    <div class="flex justify-end p-4 xClose">
+                        <img src="./assets/svg/close-square.svg" alt="">
+                    </div>
+                    <div class="text">
+                        Стулья <span>(от 2000 сом)</span>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Срок работы:</div>
+                        <div>3-4 дня</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Вывоз доставка:</div>
+                        <div>Бесплатно</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Минимальный заказ:</div>
+                        <div>1000 сом</div>
+                    </div>
+                    <div class="pt-20 pb-7">
+                        <a class="text-sky-400" href="">Скидка на самовывоз 10%</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_inner text-center pb-20">
+                    <div class="card_image">
+                        <img class="w-full" src="./assets/images/card_7.png" alt="">
+                    </div>
+                    <div class="text font-medium pt-5">
+                        Химчистка текстиля
+                    </div>
+                    <p class="pb-7 text-gray-500">
+                        от 2000 сом
+                    </p>
+                    <div>
+                        <a class="card_btn" href="javascript:void(0)">Подробнее</a>
+                    </div>
+                </div>
+                <div class="more text-center hidden">
+                    <div class="flex justify-end p-4 xClose">
+                        <img src="./assets/svg/close-square.svg" alt="">
+                    </div>
+                    <div class="text ">
+                        Стулья <span>(от 2000 сом)</span>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Срок работы:</div>
+                        <div>3-4 дня</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Вывоз доставка:</div>
+                        <div>Бесплатно</div>
+                    </div>
+                    <div class="border_b mx-8 flex justify-between pt-5 pb-3 font-medium">
+                        <div>Минимальный заказ:</div>
+                        <div>1000 сом</div>
+                    </div>
+                    <div class="pt-20 pb-7">
+                        <a class="text-sky-400" href="">Скидка на самовывоз 10%</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-10">
+            <a class="less_btn card_btn" href="javascript:void(0)">Увидеть меньше</a>
+        </div>
+    </div>
+
+    <div class="chemical_clean">
+        <div class="container1">
+            <div class="text-center font-semibold text-2xl pt-10">
+                Химчистка мебели
+            </div>
+            <div class="text-center pt-2 text-gray-700 pt-2">
+                Химчистка проводится методом аквачистки. <br>
+                Посмотрите, как мы чистим и удаляем пятна.
+            </div>
+            <div class="video pt-4">
+                <!-- <video class="w-full" id="player" playsinline controls data-poster="/path/to/poster.jpg">
+                    <source src="./assets/video" type="video/mp4" />
+                </video> -->
+                <!-- <video class="w-full theVideo" src="./assets/video">
+                </video>
+                <a class="videoPlay" href="javascript:void(0)"><img src="./assets/svg/videoPlay.svg" alt=""></a> -->
+            </div>
+            <div class="grid grid-cols-3 py-14 px-4 gap-10 font-medium max-lg:grid-cols-2 max-sm:grid-cols-1">
+                <div class="bg-white px-5 py-10">
+                    <div class="flex gap-2 pb-2">
+                        <div class="text-sky-400">01</div>
+                        <div>Заберем</div>
+                    </div>
+                    <p>
+                        Проводим химчистку у вас дома
+                        или в офисе. Уже через один час
+                        изделия будут чистыми
+                    </p>
+                </div>
+                <div class="bg-white px-5 py-10">
+                    <div class="flex gap-2 pb-2">
+                        <div class="text-sky-400">02</div>
+                        <div>Почистим </div>
+                    </div>
+                    <p>
+                        Используем безопасные для человека
+                        и домашних животных моющие
+                        средства
+                    </p>
+                </div>
+                <div class="bg-white px-5 py-10">
+                    <div class="flex gap-2 pb-2">
+                        <div class="text-sky-400">03</div>
+                        <div>Доставим</div>
+                    </div>
+                    <p>
+                        Применяемый метод химчистки в 97%
+                        случаев позволяет удалить любые
+                        пятна и загрязнения.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container1">
+        <div id="workers" class="workers pb-10">
+            <div class="text-center font-semibold text-2xl pt-10">
+                Наши оборудование
+            </div>
+            <div class="text-center pt-2 text-gray-700 pt-2">
+                Результаты нашей работы - не только видимая чистота <br>
+                а действитель чистый снаружи и внутри диван все это блогодаря <br>
+                нашим европейскиим оборудованиям
+            </div>
+            <div class="images sm:grid sm:grid-cols-2 gap-10 pt-10 max-lg:gap-5">
+                <img class="staff" src="./assets/images/workers1.png" alt="">
+                <img class="staff max-sm:hidden" src="./assets/images/workers2.png" alt="">
+                <img class="staff max-sm:hidden" src="./assets/images/workers3.png" alt="">
+                <img class="staff max-sm:hidden" src="./assets/images/workers4.png" alt="">
+            </div>
+            <div class="staff_controller flex justify-end pt-5 pb-8 gap-2 sm:hidden">
+                <button id="staffPrevBtn" class="staffPrevBtn"><img src="./assets/svg/workers_prevB.svg"
+                        alt=""></button>
+                <button id="staffNextBtn" class="staffNextBtn"><img src="./assets/svg/workers_nextB.svg"
+                        alt=""></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="chemical_clean pb-20">
+        <div class="container1">
+            <div class="text-center font-semibold text-2xl pt-10">
+                Химчистка мебели
+            </div>
+            <div class="text-center pt-2 text-gray-700 pt-2 mb-10">
+                Химчистка проводится методом аквачистки. <br>
+                Посмотрите, как мы чистим и удаляем пятна.
+            </div>
+            <div class="swiper mySwiper pb-16">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg-white p-6 rounded-2xl">
+                        <div>
+                            <img src="./assets/svg/66.svg" alt="">
+                        </div>
+                        <div class="pt-8">
+                            Обратились в компанию “Мойка ковров”, нужно было почистить 3 дивана от застарелых пятен и
+                            щенячих сюрпризов. Приехали Сергей и Наталья, большие Умнички! Очень аккуратно, чисто,
+                            оперативно почистили наши диваны. Заранее предупредили о приезде, дали рекомендации по
+                            уходу. Спасибо ребятам и Вашей компании!!!
+                        </div>
+                        <div class="pb-5 pt-8">
+                            Олеся Мантурова <br>
+                            <span>27.09.2022</span>
+                        </div>
+                        <a class="btn66" href="javascript:void(0)">
+                            <img src="./assets/svg/insta66.svg" alt="">
+                            <span>Ссылка на отзыв</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg-white p-6 rounded-2xl">
+                        <div>
+                            <img src="./assets/svg/66.svg" alt="">
+                        </div>
+                        <div class="pt-8">
+                            Обратились в компанию “Мойка ковров”, нужно было почистить 3 дивана от застарелых пятен и
+                            щенячих сюрпризов. Приехали Сергей и Наталья, большие Умнички! Очень аккуратно, чисто,
+                            оперативно почистили наши диваны. Заранее предупредили о приезде, дали рекомендации по
+                            уходу. Спасибо ребятам и Вашей компании!!!
+                        </div>
+                        <div class="pb-5 pt-8">
+                            Олеся Мантурова <br>
+                            <span>27.09.2022</span>
+                        </div>
+                        <a class="btn66" href="javascript:void(0)">
+                            <img src="./assets/svg/insta66.svg" alt="">
+                            <span>Ссылка на отзыв</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg-white p-6 rounded-2xl">
+                        <div>
+                            <img src="./assets/svg/66.svg" alt="">
+                        </div>
+                        <div class="pt-8">
+                            Обратились в компанию “Мойка ковров”, нужно было почистить 3 дивана от застарелых пятен и
+                            щенячих сюрпризов. Приехали Сергей и Наталья, большие Умнички! Очень аккуратно, чисто,
+                            оперативно почистили наши диваны. Заранее предупредили о приезде, дали рекомендации по
+                            уходу. Спасибо ребятам и Вашей компании!!!
+                        </div>
+                        <div class="pb-5 pt-8">
+                            Олеся Мантурова <br>
+                            <span>27.09.2022</span>
+                        </div>
+                        <a class="btn66" href="javascript:void(0)">
+                            <img src="./assets/svg/insta66.svg" alt="">
+                            <span>Ссылка на отзыв</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg-white p-6 rounded-2xl">
+                        <div>
+                            <img src="./assets/svg/66.svg" alt="">
+                        </div>
+                        <div class="pt-8">
+                            Обратились в компанию “Мойка ковров”, нужно было почистить 3 дивана от застарелых пятен и
+                            щенячих сюрпризов. Приехали Сергей и Наталья, большие Умнички! Очень аккуратно, чисто,
+                            оперативно почистили наши диваны. Заранее предупредили о приезде, дали рекомендации по
+                            уходу. Спасибо ребятам и Вашей компании!!!
+                        </div>
+                        <div class="pb-5 pt-8">
+                            Олеся Мантурова <br>
+                            <span>27.09.2022</span>
+                        </div>
+                        <a class="btn66" href="javascript:void(0)">
+                            <img src="./assets/svg/insta66.svg" alt="">
+                            <span>Ссылка на отзыв</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide bg-white p-6 rounded-2xl">
+                        <div>
+                            <img src="./assets/svg/66.svg" alt="">
+                        </div>
+                        <div class="pt-8">
+                            Обратились в компанию “Мойка ковров”, нужно было почистить 3 дивана от застарелых пятен и
+                            щенячих сюрпризов. Приехали Сергей и Наталья, большие Умнички! Очень аккуратно, чисто,
+                            оперативно почистили наши диваны. Заранее предупредили о приезде, дали рекомендации по
+                            уходу. Спасибо ребятам и Вашей компании!!!
+                        </div>
+                        <div class="pb-5 pt-8">
+                            Олеся Мантурова <br>
+                            <span>27.09.2022</span>
+                        </div>
+                        <a class="btn66" href="javascript:void(0)">
+                            <img src="./assets/svg/insta66.svg" alt="">
+                            <span>Ссылка на отзыв</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container1">
+        <div class="pt-20 pb-10">
+            <div class="lg:flex justify-between gap-5 items-center" id="order">
+                <div class="lg:max-w-sm max-lg:text-center max-lg:px-10 max-sm:px-0 max-lg:pb-10">
+                    <div class="text-2xl pb-1">
+                        Хотите заказать нашу услугу
+                    </div>
+                    <div class="font-14px pb-4">
+                        Оставьте ваши данные 
+                        и мы ответим вам в кратчаещие сроки
+                    </div>
+                    <form id="idName">
+                        <div class="pb-4">
+                            <input class="order_iputs" type="text" name="full_name" id="" placeholder="Имя Фамилия" required>
+                        </div>
+                        <div class="pb-4">
+                            <input class="order_iputs" type="rel" name="phone_number" id="" placeholder="Номер телефона" required>
+                        </div>
+                        <div class="pb-10">
+                            <input class="order_iputs" type="text" name="full_name" id="" placeholder="Адрес" required>
+                        </div>
+                        <div class="text-center">
+                            <button id="order_btn" class="order_btn w-full" href="">Оставить заявку</button>
+                        </div>
+                        <div id="accepted" class="flex gap-3 hidden pt-3">
+                            <img src="./assets/svg/accepted_icon.svg" alt="">
+                            <span class="text-green-400 font-12px">Спасибо мы приняли ваш запрос в скором времени наши специалисты с вами свяжуться</span>
+                        </div>
+                    </form>
+                    <div class="sm:flex items-center justify-between pt-10">
+                        <div class=" font-12px">
+                            <div class="flex items-center gap-3 pb-4">
+                                <a href=""><img src="./assets/svg/order_tel.svg" alt=""></a>
+                                <span>+996 700 600 600</span>
+                            </div>
+                            <div class="flex items-center gap-3 pb-4">
+                                <a href=""><img src="./assets/svg/order_mail.svg" alt=""></a>
+                                <span>unreal@outlook.com</span>
+                            </div>
+                            <div class="flex items-center gap-3 pb-4">
+                                <a href=""><img src="./assets/svg/order_location.svg" alt=""></a>
+                                <span>706 Campfire Ave. Meriden, CT 06450</span>
+                            </div>
+                        </div>
+                        <div class="max-sm:flex gap-5 items-center text-center max-md">
+                            <div class="sm:hidden">Наши соцсети:</div>
+                            <div class="sm:pb-4">
+                                <a class="sm:pb-4 " href=""><img src="./assets/svg/order_insta.svg" alt=""></a>
+                            </div>
+                            <div class="sm:pb-4">
+                                <a class="sm:pb-4 " href=""><img src="./assets/svg/iconoir_telegram.svg" alt=""></a>
+                            </div>
+                            <div class="sm:pb-4">
+                                <a class="sm:pb-4 " href=""><img src="./assets/svg/order_what.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="order_images_outer max-sm:hidden">
+                        <img class="order_images" src="./assets/images/Frame.png" alt="">
+                    </div>
+                    <div class="sm:hidden">
+                        <div class="images sm:grid sm:grid-cols-2 pt-10">
+                            <div class="order">
+                                <img src="./assets/images/order_image3.png" alt="">
+                            </div>
+                            <div class="order max-sm:hidden">
+                                <img src="./assets/images/order_image2.png" alt="">
+                            </div>
+                            <!-- <div class="order max-sm:hidden">
+                                <img src="./assets/images/order_image3.png" alt="">
+                            </div> -->
+                        </div>
+                        <div class="staff_controller flex justify-end pt-5 pb-8 gap-2 sm:hidden">
+                            <button id="orderPrevBtn" class="staffPrevBtn"><img src="./assets/svg/workers_prevB.svg"
+                                    alt=""></button>
+                            <button id="orderNextBtn" class="staffNextBtn"><img src="./assets/svg/workers_nextB.svg"
+                                    alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="text-white">
+        <div class="container1">
+            <div class="lg:flex py-10 justify-between footer_inner items-center">
+                <div>
+                    <img src="./assets/svg/footer_logo.svg" alt="">
+                </div>
+                <div class="font-14px ">
+                    <div class="sm:flex gap-3 pb-3">
+                        <div class="max-sm:pb-3">
+                            <button class="nav_btns">Услуги</button> 
+                        </div>
+                        <div>
+                            <button class="nav_btns">Примеры работ</button> 
+                        </div>
+                    </div>
+                    <div class="sm:flex gap-3">
+                        <div class="max-sm:pb-3">
+                            <button class="nav_btns">Отзывы</button>
+                        </div>
+                        <div>
+                            <button class="nav_btns">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-3 font-14px">
+                    <div>
+                        <button><img src="./assets/svg/order_location.svg" alt=""></button>
+                    </div>
+                    <div>
+                        <div>Кыргызыстан</div>
+                        <div>706 Campfire Ave. </div>
+                    </div>
+                </div>
+                <div class="flex gap-3 font-14px sm:hidden">
+                    <div>
+                        <button><img src="./assets/svg/order_tel.svg" alt=""></button>
+                    </div>
+                    <div>
+                        <div>+996 (700) 600 600</div>
+                        <div>Ежидневно с 8:00 до 21:00</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-7 max-sm:pl-8">
+                    <button><img src="./assets/svg/iconoir_telegram.svg" alt=""></button>
+                    <button><img src="./assets/svg/footer_what.svg" alt=""></button>
+                    <button><img src="./assets/svg/order_insta.svg" alt=""></button>
+                    <div class="max-sm:hidden">
+                        <div>+996 (700) 600 600</div>
+                        <div class="font-12px">Ежидневно с 8:00 до 21:00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center font-12px">
+                Design system for carpet cleaning company <br>
+                © PROlab LLC
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        function windowWidth(slidesPerViewFunc) {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: slidesPerViewFunc,
+                spaceBetween: 30,
+                // cssMode: true,
+                // navigation: {
+                //     nextEl: ".swiper-button-next",
+                //     prevEl: ".swiper-button-prev",
+                // },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        }
+        if (window.innerWidth >= 1024) {
+            windowWidth(3)
+        } else if (window.innerWidth < 1024 && window.innerWidth > 640) {
+            windowWidth(2)
+        } else if (window.innerWidth < 640) {
+            windowWidth(1)
+        }
+    </script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.polyfilled.js"></script>
+    <script src="./assets/js/Carpet.js"></script>
+
+</body>
+
+</html>

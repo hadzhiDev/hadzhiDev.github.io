@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    height: 100%;
+}
+
+header {
+    background-image: url('../images/headerBg.png');
+    background-size: cover;
+    background-position: center center;
+    /* background:; */
+    min-height: 100vh;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.font-12px {
+    font-size: 11.4px;
+}
+
+.font-14px {
+    font-size: 14px;
+}
+
+.main_header .title {
+    line-height: 120%;
+}
+
+.header_btn {
+    padding: 10px 20px;
+    border: 2px solid #52B5EA;
+    border-radius: 4px;
+    background: #52B5EA;
+    color: #fff;
+}
+
+.card_btn {
+    padding: 10px 20px;
+    margin: 0;
+    border: 2px solid #52B5EA;
+    border-radius: 4px;
+    color: #52B5EA;
+    transition: .3s;
+}
+
+.card_btn:hover {
+    background: #52B5EA;
+    color: #FFF;
+}
+
+.card_btn:active {
+    filter: brightness(90%);
+}
+
+.more {
+    background: #FBFBFB;
+    border-radius: 12px;
+}
+
+.border_b {
+    border-bottom: 1px solid #EDEDED;
+}
+
+.more .border_b {
+    color: #3C3C3C;
+}
+
+.more .text span {
+    font-size: 12px;
+    color: #81807A;
+}
+
+.xClose {
+    cursor: pointer;
+}
+
+.less_btn {
+    padding: 20px 50px;
+    border-radius: 8px;
+}
+
+.errorText {
+    border: red 1px solid ;
+    color: red
+}
+
+/* Nav */
+
+.nav_btns:hover{
+    text-decoration: underline;
+    color: #52B5EA;
+}
+
+/* Chemical Clean */
+
+.chemical_clean {
+    background-color: #FBFBFB;
+}
+
+.video {
+    position: relative;
+}
+
+.videoPlay {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+
+.control_66 button:hover,
+.staff_controller button:hover {
+    filter: brightness(120%);
+}
+
+.control_66 button:active,
+.staff_controller button:active {
+    filter: brightness(90%);
+}
+
+.btn66 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #FBFBFB;
+    border-radius: 6px;
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+.btn66 span {
+    font-size: 14px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+}
+
+/* Order */
+
+.order_iputs{
+    border: 1px solid #81807A;
+    border-radius: 6px;
+    padding: 14px;
+    width: 100%;
+}
+
+.order_btn{
+    border-radius: 6px;
+    background: #52B5EA;
+    padding: 20px 80px;
+}
+
+.order_images{
+    max-height: 100vh;
+    width: 100%;
+}
+
+.order img{
+    width: 100%;
+}
+
+/* Footer */
+
+footer{
+    background: #3A3E3F;
+}
+
+
+
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        padding: 15px 20px;
+    }
+
+    nav.poFixed {
+        position: fixed;
+        background-color: #FFF;
+    }
+
+    .navBar {
+        position: fixed;
+        top: 86px;
+        background-color: #FFF !important;
+        z-index: 3;
+        left: -100%;
+        flex-direction: column;
+        row-gap: 60px;
+        min-height: 100vh;
+        width: 80%;
+        max-width: 400px;
+        padding-left: 35px;
+        padding-top: 50px;
+        transition: .4s;
+    }
+
+    .navBar.active {
+        left: 0;
+    }
+
+    #frame.active {
+        right: 0;
+    }
+
+    #frame {
+        position: fixed;
+        top: 0;
+        right: -150%;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        backdrop-filter: blur(2px);
+        background-color: rgba(0, 0, 0, .3);
+    }
+    
+    .order_images_outer{
+        padding: 0 70px;
+    }
+
+    .footer_inner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .order_images_outer{
+        padding: 0 40px;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .main_header .title {
+        max-width: 300px;
+    }
+
+    .main_header .text {
+        max-width: 80%;
+    }
+
+    .videoPlay {
+        top: 40%;
+        left: 40%;
+    }
+
+    .order_images_outer{
+        padding: 0 0;
+    }
+
+    .footer_inner{
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .navBar {
+        row-gap: 80px;
+    }
+}
